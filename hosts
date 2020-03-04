@@ -1,0 +1,28 @@
+[all:vars]
+ansible_user=student10
+ansible_ssh_pass=ansible123
+ansible_port=22
+
+[sitea]
+dev_web1 ansible_host=172.16.113.95
+dev_web2 ansible_host=172.16.188.209
+[siteb]
+prod_web1 ansible_host=172.16.80.209
+prod_web2 ansible_host=172.16.25.50
+
+[control]
+ansible ansible_host=3.90.105.32
+
+[nodes]
+172.16.113.95
+172.16.188.209
+172.16.80.209
+172.16.25.50
+
+[sitea]
+172.16.80.209
+172.16.25.50
+
+[siteb]
+172.16.113.95
+172.16.188.209
